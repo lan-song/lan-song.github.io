@@ -1,5 +1,4 @@
 
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -8,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="xintianyou">
     <meta name="referrer" content="never">
-    <link rel="icon" href="img/logo.ico">
+    <link rel="icon" href="img/logo.png">
     <title>兰松景观园林工程有限公司</title>
 
     <!-- Bootstrap core CSS -->
@@ -28,6 +27,7 @@
 			}
 		}
 		body{padding-top:50px;}
+		.navbar-brand>img{margin-top:-10px;}
 		.row>div{text-align:center;margin:10px auto;}
 		.img-row img{margin:0px auto 10px;width:100%;}
 		.row video{margin:0px auto 20px;width:100%;}
@@ -40,14 +40,13 @@
 		.section3{position: relative;padding: 100px 0 0;background: #0E77EA;background-image: linear-gradient(150deg, #0E77EA 0%, #060D33 100%);}
 		.section3:after{content:"";display: block;background: #fff;z-index: 1;width: 100%;height: 140px;position: absolute;left: 0;right: 0;bottom: 0;}
 		.s3{background: #fff;position: relative;z-index: 2;}
-		.s3-1{float:right;position:relative;height:344px;width:344px;background:url(http://demo.cmseasy.cn./template/2019-default/skin/images/base/s3-1.jpg);background-size:cover}
+		.s3-1{float:right;position:relative;height:344px;width:344px;background:url(img/contact.jpg);background-size:cover}
 		.s3-1 h4{font-size:20px;color:#fff;line-height:38px;padding-left:30px;margin:0;padding-top:43px}
 		.s3-1 p{font-size:30px;color:#fff;padding:0px 0px 30px 30px;font-weight:700;line-height:45px}
 		.s3-1 p:after{content:"";display:block;height:3px;width:2em;background:#fff;margin-top:10px}
 		.s3-1 h5 {color:#fff; font-size:20px; padding:5px 30px }
 		.s3-1 h5 span {font-size:14px;}
 		.s3-1 a.more{position:absolute;left:0;right:0;bottom:0;border-top:1px solid rgba(255,255,255,.5);padding:12px 30px;text-align:right;line-height:37px;color:#fff;font-size:16px}
-		.s3-1 a.more em{float:left;display:inline-block;width:45px;height:37px;background:url(http://demo.cmseasy.cn./template/2019-default/skin/images/base/s3-ico.jpg)}
 		.s3-2{height:344px;padding:50px;overflow:hidden;background:rgb(0,0,0,0.05)}
 		.s3-2 h4{font-size:24px;color:#060D33;line-height:35px;margin:0}
 		.s3-2 span{text-transform:uppercase;font-size:14px;color:#dbdbdb;line-height:25px}
@@ -59,28 +58,38 @@
 			.section5:after{display: none;}
 			.s3{height: auto;}
 			.s3-1{float: none;width: 100%;height: auto;padding-bottom: 100px;}
-			.s3-2{padding: 20px;}
+			.s3-2{padding: 20px;display:none;}		
+			.section3{background:none;margin-top:-100px;}
 		}
-		
-		
-		.section5{padding:30px 0;}
-		.s5{position:relative;padding-right:365px}
-		.s5-text{border-color:#0E77EA;background: #0E77EA;background-image: linear-gradient(150deg, #0E77EA 0%, #060D33 100%);padding:30px;padding-right:230px}
+		.section5{padding:20px 0;}
+		.s5{position:relative;width:60%;}
+		.s5-text{border-color:#0E77EA;background: #0E77EA;background-image: linear-gradient(150deg, #0E77EA 0%, #060D33 100%);padding:10px;padding-right:180px}
 		.s5-text h4{font-size:24px;color:#fff;margin-bottom:0;line-height:34px}
 		.s5-text h4 a{color:#fff;}
 		.s5-text span{line-height:23px;font-size:14px;color:#fff;text-transform:uppercase}
-		.s5-text p{line-height:37px;color:#fff;margin-top:19px;font-size:16px;overflow:hidden;height:220px}
+		.s5-text p{line-height:37px;color:#fff;margin-top:19px;font-size:15px;overflow:hidden;height:230px}
 		.s5-text em{display:block;height:3px;background:rgba(255,255,255,.3);width:0;transition:all .3s ease-in-out 0s;margin:25px 0}
 		.s5-text:hover em{width:100px}
-		.s5-img{position:absolute;right:0;top:30px;height:325px;overflow:hidden}
-		.s5-img img{width:100%;height:100%;object-fit:cover}
+		.s5-img{position:absolute;left:45%;right:0px;top:80px;height:380px;overflow:hidden}
+		.s5-img img{width:1000px;height:100%;object-fit:cover}
 		@media screen and (min-width: 0) and (max-width: 991px){
 			.section5{padding: 0;}
-			.s5{padding: 0;}
+			.s5{padding: 0;position:relative;width:100%;}
 			.s5-img{display:none;}
 			.s5-text{padding: 30px;}
 			.s5-text p{height: auto;}
 			.s5-text em{width: 100px;margin: 0;}
+			
+		}
+		@media screen and (min-width: 991px) and (max-width: 1200px){
+			.s5-text{padding-right:150px;}
+			.s5-text p{height:250px;}
+			.s5-img{height:400px;}
+		}
+		.min{display:none !important;}
+		@media screen and (min-width: 0) and (max-width: 991px){
+			.carousel-inner .max{display:none  !important;}
+			.carousel-inner .min{display:block  !important;}
 		}
 	</style>
   </head>
@@ -128,17 +137,22 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
   
-	<div class="item  active">
-	  <img src="img/img-ld-min.jpg" />
+      <div class="item active">
+		<img class="max" src="img/img-mm-min.jpg" />
+		<img class="min" src="img/img-mm-min-min.jpg" />
+	  	<!--div style="width:100%;height:300px;background:rgb(0,0,0,0.5);color:white;text-align:center;line-height:250px;">第一张图片</div-->
+      	<div class="carousel-caption"> </div>
+    </div>
+  
+	<div class="item">
+	  <img class="max" src="img/img-ld-min.jpg" />
+	  <img class="min" src="img/img-js-min-min.jpg" />
 	  <div class="carousel-caption"></div>
     </div>
+
     <div class="item">
-		<img src="img/img-mm-min.jpg" />
-	  <!--div style="width:100%;height:300px;background:rgb(0,0,0,0.5);color:white;text-align:center;line-height:250px;">第一张图片</div-->
-      <div class="carousel-caption"> </div>
-    </div>
-    <div class="item">
-	  <img src="img/img-hc-min.jpg" />
+	  <img class="max" src="img/img-hc-min.jpg" />
+	  <img class="min" src="img/img-hc-min-min.jpg" />
 	  <div class="carousel-caption"></div>
     </div>
 	 
@@ -157,23 +171,24 @@
 </div>
 
 
-<div class="container-fruid  pdlr-20 clearfix" id="aboutUs">
-<div class="row column">
-<div class="tag">
+<div class="container  pdlr-20" id="aboutUs">
+<div class="row">
+<div class="col-sm-12 col-md-12">
 <div class="section5">
-<div class="container">
-<div class="s5 clearfix">
-<div class="s5-img">
-<a title="关于我们" href="#" target="_blank"><img alt="关于我们" class="lazy" src="http://demo.cmseasy.cn./html/upload/images/201907/guanyu.jpg" style=""></a>
-</div>
+<div class="s5">
+
 <div class="s5-text">
 <h4><a title="关于我们" href="#">关于我们</a></h4>
 <span>ABOUT-US</span>
-<p>兰松景观园林工程有限公司是一家主营园林绿化工程施工业务的公司，并兼营专业设计服务、家具销售、家具零配件销售、建筑材料销售、工艺美术品及礼仪用品销售、办公用品销售、日用百货销售、家用电器销售、花卉种植、礼品花卉销售、花卉绿植租借与代管理、园艺产品销售、肥料销售、互联网销售、农业园艺服务、农副产品销售、住宅室内装饰装修、建设工程设计、建设工程设计等业务。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兰松景观园林工程有限公司是一家主营园林绿化工程施工业务的公司，并兼营专业设计服务、建筑材料销售、工艺美术品及礼仪用品销售、办公用品销售、日用百货销售、花卉种植、礼品花卉销售、花卉绿植租借与代管理、园艺产品销售、肥料销售、互联网销售、农业园艺服务、住宅室内装饰装修、建设工程设计、建设工程设计等业务。</p>
 <em></em>
 </div>
 </div>
+
+<div class="s5-img">
+<img alt="关于我们" src="img/about.jpg">
 </div>
+
 </div>
 </div>
 </div>
@@ -234,13 +249,11 @@
 <p>Contact-us</p>
 <h5><span class="glyphicon glyphicon-earphone"></span>：18934922071</h5>
 <h5><span class="glyphicon glyphicon-send"></span>：<span>兰松景观园林工程有限公司</span></h5>
-<!-- <a class="more" title="联系我们" href="#" target="_blank"><em></em>了解更多 &gt;</a> -->
 </div>
 <div class="s3-2">
 <h4>联系我们</h4>
 <span>Contact-us</span>
 <p>如果您有园林绿化工程施工方面的需求请联系我们，我们将竭诚为您提供一流的专业服务，感谢您的支持。</p>
-<!-- <a class="more" title="联系我们" href="#" target="_blank">了解更多  &gt;</a> -->
 </div>
 </div>
 </div>
@@ -271,7 +284,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.12/dist/js/bootstrap.min.js"></script>
-
+<script>
+$(".navbar-collapse").on("click", function(){
+	$(".navbar-collapse").removeClass("in");
+});
+</script>
 </body>
 
 </html>  
